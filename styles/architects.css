@@ -60,29 +60,73 @@ nav li a {
     color: #131313;
 }
 
-.banner-description {
+.text-light-gray {
     color: #727272;
 }
-.banner img{
+
+.banner img {
     margin-top: 20px;
     width: 100%;
 }
 
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+}
+
+.team-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.team-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.team-title {
+    font-size: 2.8rem;
+}
+
+.team-title .quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.team-title .features{
+    color: #FF900E;
+    font-weight: 700;
+
+}
+
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+    .team-container,
+    nav {
         flex-direction: column;
     }
-    
+    .team-images{
+        grid-template-columns: 1fr;
+    }
+
 }
+
 @media screen and (min-width:576px) and (max-width:992px) {
-    header{
+    header {
         padding: 50px;
     }
-    nav{
+
+    nav,
+    .team-container
+     {
         flex-direction: column;
     }
-    
+
 }
